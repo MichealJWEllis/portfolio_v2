@@ -12,9 +12,9 @@ import video from "./assets/video/DJI_0043_Trim.mp4";
 const App = () => {
     return (
         <>
-            {/* <video loop autoPlay id="myVideo">
+            <video loop autoPlay id="myVideo">
                 <source src={video} type="video/mp4" />
-            </video> */}
+            </video>
             <Nav />
             <Header />
             

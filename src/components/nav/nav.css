@@ -31,3 +31,19 @@ nav a.active{
 nav a:hover{
     background: rgba(0,0,0,0.3);
 }
+
+
+/* ======= MEDIA QUERIES (SM) */
+@media screen and (max-width: 1024px) {
+    nav{
+       display: none;
+    }
+}
+
+
+/* ======= MEDIA QUERIES (SM) */
+@media screen and (max-width: 1024px) {
+    nav{
+        display: none;
+    }
+}
