@@ -1,12 +1,12 @@
 nav {
     background: rgba(0,0,0,0.3);
     width: max-content;
-    display: block;
+    display: inline-block;
     padding: 0.7rem 1.7rem;
     z-index: 1; 
     position: fixed;
-    right: -15%;
-    transform:translate(-50%);
+    justify-content: center;
+    transform:translate(100%);
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
