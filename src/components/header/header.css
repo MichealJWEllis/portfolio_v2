@@ -29,6 +29,12 @@ header {
     position: absolute;
     left: 0;
     bottom: 3rem;
+    width: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.303);
+    padding: 10px;
+    border-radius: 1rem  0.25rem 1rem 0.25rem ;
+    background: rgba(0, 0, 0, 0.076);
+    backdrop-filter: blur(15px);
 }
 
 .header__socials::after {
@@ -63,6 +69,11 @@ header {
     transform: rotate(90deg);
     font-weight: 600;
     font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.303);
+    padding: 10px;
+    border-radius: 1rem  0.25rem 1rem 0.25rem ;
+    background: rgba(0, 0, 0, 0.076);
+    backdrop-filter: blur(15px);
 }
 
 

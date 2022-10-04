@@ -15,9 +15,11 @@ const App = () => {
             {/* <video loop autoPlay id="myVideo">
                 <source src={video} type="video/mp4" />
             </video> */}
-            <Header />
             <Nav />
+            <Header />
+            
             <About />
+            
             <Experience />
             <MyServices />
             <Portfolio />
