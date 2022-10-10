@@ -17,9 +17,7 @@ const App = () => {
             </video>
             <Nav />
             <Header />
-            
             <About />
-            
             <Experience />
             <MyServices />
             <Portfolio />

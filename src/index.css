@@ -121,9 +121,18 @@ img {
     z-index: -1;
 }
 
-/* ============ MEDIA QUERIES(MED) */
 
-@media screen and (max-width: 1024px){
+
+/* ====== MEDIA QUERIES ==== */
+
+/* LARGER DESKTOPS AND MONITORS */
+@media all and (min-width:1279px)  and (max-width:1880px) {
+    
+}
+
+
+/* LAPTOPS, LARGER TABLETS IN LANDSCAPE, AND SMALL DESKTOPS */
+@media all and (min-width:769px) and (max-width:1279px) {
     .container{
         width: var(--container-width-md);
     }
@@ -133,9 +142,17 @@ img {
     }
 }
 
-/* ============ MEDIA QUERIES(SM) */
-
-@media screen and (max-width: 600px){
+/* TABLETS & LARGER SMARTPHONES */
+@media all and (min-width:481px) and (max-width:768px) {
+    #myVideo {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
     .container{
         width: var(--container-width-sm);
     }
@@ -144,3 +161,16 @@ img {
         margin-bottom: 2rem;
     }
 }
+
+/* SMALLER SMARTPHONES */
+@media all and (min-width:0px) and (max-width:480px) {
+    #myVideo {
+        object-fit: r;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+} 

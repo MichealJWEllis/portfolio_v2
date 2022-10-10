@@ -6,12 +6,12 @@ nav {
     z-index: 1; 
     position: fixed;
     justify-content: center;
-    transform:translate(100%);
+    transform:translate(350%);
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
-    margin-top: 1rem;
+    margin: 2rem;
 }
 
 nav a{
@@ -33,16 +33,33 @@ nav a:hover{
 }
 
 
-/* ======= MEDIA QUERIES (SM) */
-@media screen and (max-width: 1024px) {
-    nav{
-       display: none;
-    }
+
+
+
+/* ====== MEDIA QUERIES ==== */
+
+/* LARGER DESKTOPS AND MONITORS */
+@media all and (min-width:1279px) and (max-width:1880px) {
+    
 }
 
 
-/* ======= MEDIA QUERIES (SM) */
-@media screen and (max-width: 1024px) {
+/* LAPTOPS, LARGER TABLETS IN LANDSCAPE, AND SMALL DESKTOPS */
+@media all and (min-width:769px) and (max-width:1279px) {
+    nav{
+        transform:translate(150%);
+    }
+}
+
+/* TABLETS & LARGER SMARTPHONES */
+@media all and (min-width:481px) and (max-width:768px) {
+    nav{
+        display: none;
+    }
+}
+
+/* SMALLER SMARTPHONES */
+@media all and (min-width:0px) and (max-width:480px) {
     nav{
         display: none;
     }

@@ -17,11 +17,12 @@
 .about__me-image {
     border-radius: 4rem  0.50rem 4rem 0.50rem ;
     overflow: hidden;
-    transition: var(--transition)
+    transition: var(--transition);
+    height: 110%;
 }
 
 .about__me-image:hover{
-    transform: rotate(10deg)
+    transform: rotate(10deg);
     
 }
 
@@ -59,7 +60,7 @@
 
 
 /* ======= MEDIA QUERIES (MED) */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .about__container{
         grid-template-columns: 1fr;
         gap: 0;
@@ -74,10 +75,10 @@
         margin: 1rem 0 1.5rem;
     }
     
-}
+} */
 
 /* ======= MEDIA QUERIES (SM) */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 
     .about__me{
         width: 65%;
@@ -96,4 +97,27 @@
     .about__content , p{
         margin: 1.5rem 0;
     }
+} */
+
+/* ====== MEDIA QUERIES ==== */
+
+/* LARGER DESKTOPS AND MONITORS */
+@media all and (min-width:1279px)  and (max-width:1880px) {
+    
 }
+
+
+/* LAPTOPS, LARGER TABLETS IN LANDSCAPE, AND SMALL DESKTOPS */
+@media all and (min-width:769px) and (max-width:1279px) {
+    
+}
+
+/* TABLETS & LARGER SMARTPHONES */
+@media all and (min-width:481px) and (max-width:768px) {
+    
+}
+
+/* SMALLER SMARTPHONES */
+@media all and (min-width:0px) and (max-width:480px) {
+    
+} 
