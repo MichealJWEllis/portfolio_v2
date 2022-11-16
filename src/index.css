@@ -9,39 +9,55 @@
     text-decoration: none;
     
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root, html{
+    height: 100vh;
+    /* width: 100vw; */
+    /* position: relative;
+    object-fit: cover; */
+    scroll-behavior: smooth;
+}
 
 :root {
-    --color-bg: rgb(106, 106, 105);
+
+    /* min-height: 100vh;
+    min-width: 100vw;
+    --color-bg: rgb(106, 106, 105); */
     --color-bg-variant: #15141468;
     --color-primary: rgb(0, 0, 0);
     --color-primary-variant: rgba(77, 255, 104, 0.801);
     --color-white: rgba(255, 255, 255, 0.942);
     --color-light: rgba(255,255,255,0.6);
     --transition: all 400ms ease;
-    --container-width-lg: 75%;
+    /* --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-sm: 90%;
+    --container-width-sm: 90%; */
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
-::-webkit-scrollbar{
+
+/* ::-webkit-scrollbar{
     display: none;
-}
+} */
 
 body{
+    
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
+    margin: 0;
 }
 
-.container {
+/* .container {
     width: var(--container-width-lg);
     margin: 0 auto;
-}
+} */
 
 h1, h2, h3, h4,h5{
     font-weight: 500;
@@ -52,10 +68,10 @@ h1{
 
 section{
     margin-top: 8rem;
-    height: 100vh;
+    
 }
 
-section > h2, section > h5{
+section > h2, section > h3{
     text-align: center;
     color: var(--color-light);
 }
@@ -67,6 +83,18 @@ section > h2 {
 
 .text-light {
     color: var(--color-light);
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
+.text-h2{
+    color: white;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
 }
 
 a {
@@ -79,21 +107,23 @@ a:hover {
 }
 
 .btn{
+    
     width: max-content;
     display: inline-block;
-    color:var(--color-primary);
+    color:black;
     padding: 0.75rem 1.2rem;
-    border-radius:  2rem  0.25rem 2rem 0.25rem ;
+    border-radius:  2rem;
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
-    background: rgba(0, 255, 26, 0.442);
+    background: white;
     box-shadow:rgba(0, 0, 0, 0.3) 0px 8px 5px, rgba(0, 0, 0, 0.15) 0px 5px 6px;
 }
 
 .btn:hover{
-    background: var(--color-white);
-    color: var(--color-bg);
+    background: rgba(0, 30, 255, 0.924);
+    
+    color: white;
     border-color: transparent;
 }
 
@@ -112,9 +142,9 @@ img {
 /* ============ BACKGROUND VIDEO */
 
 #myVideo {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
+    object-fit: contain;
+    min-width: 100vw;
+    min-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -126,51 +156,22 @@ img {
 /* ====== MEDIA QUERIES ==== */
 
 /* LARGER DESKTOPS AND MONITORS */
-@media all and (min-width:1279px)  and (max-width:1880px) {
+@media all and (min-width:1201px)  and (max-width:1880px) {
     
 }
 
 
 /* LAPTOPS, LARGER TABLETS IN LANDSCAPE, AND SMALL DESKTOPS */
-@media all and (min-width:769px) and (max-width:1279px) {
-    .container{
-        width: var(--container-width-md);
-    }
-
-    section {
-        margin-top: 6rem;
-    }
+@media all and (min-width:769px) and (max-width:1024px) {
+    
 }
 
 /* TABLETS & LARGER SMARTPHONES */
 @media all and (min-width:481px) and (max-width:768px) {
-    #myVideo {
-        object-fit: cover;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-    .container{
-        width: var(--container-width-sm);
-    }
-
-    section > h2 {
-        margin-bottom: 2rem;
-    }
+   
 }
 
 /* SMALLER SMARTPHONES */
-@media all and (min-width:0px) and (max-width:480px) {
-    #myVideo {
-        object-fit: r;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
+@media all and (min-width:320px) and (max-width:480px) {
+    
 } 

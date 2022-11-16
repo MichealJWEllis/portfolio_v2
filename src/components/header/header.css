@@ -1,14 +1,10 @@
-header {
-    height: 100vh;
-    padding-top: 7rem;
+#home header {
+    min-height: 100vh;
+    min-width: 100vw;
     overflow: hidden;
 }
 
-.header__container {
-    text-align: center;
-    height: 100vh;
-    position: relative;
-}
+
 
 /* ========== CTA */
 
@@ -32,7 +28,7 @@ header {
     width: 40px;
     border: 1px solid rgba(255, 255, 255, 0.303);
     padding: 10px;
-    border-radius: 1rem  0.25rem 1rem 0.25rem ;
+    border-radius: 1rem ;
     background: rgba(0, 0, 0, 0.076);
     backdrop-filter: blur(15px);
 }
@@ -46,15 +42,18 @@ header {
 
 /* =========== ME */
 
+.me {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
 .me img{
     
     background-color: black;
     width: 49rem;
-    height: 32rem;
-    position:absolute;
+    height: 30rem;
     margin-top: 2rem;
-    left: calc(22%);
-    border-radius: 8rem  0.5rem 8rem 0.5rem ;
+    border-radius: 2rem  ;
     border: 1px solid rgba(235, 235, 235, 0.36);
     box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 10px, rgba(0, 0, 0, 0.15) 0px 15px 12px;
 }
@@ -70,124 +69,74 @@ header {
     font-size: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.303);
     padding: 10px;
-    border-radius: 1rem  0.25rem 1rem 0.25rem ;
+    border-radius: 1rem ;
     background: rgba(0, 0, 0, 0.076);
     backdrop-filter: blur(15px);
 }
 
+.introductionBanner{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5rem;
+    background-color: var(--color-bg-variant);
+    width: 50%;
+    text-align: center;
+}
 
-/* ============ MEDIA QUERIES(MED) */
-
-/* @media screen and (max-width: 1024px){
-    header {
-        height: 68vh;
-    }
-    .cta{
-        margin-top: 1.5rem;
-    }
-    .me img{
-    
-        background-color: black;
-        width: 15rem;
-        height: auto;
-        position:absolute;
-        left: cal(150% - 11rem);
-        margin-top: 2rem;
-        border-radius: 6rem  0.5rem 6rem 0.5rem ;
-        border: 1px solid rgba(235, 235, 235, 0.36);
-        left: calc(55% - 11rem);
-        box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 10px, rgba(0, 0, 0, 0.15) 0px 15px 12px;
-    }
-} */
-
-
-/* ============ MEDIA QUERIES(SM) */
-
-/* @media screen and (max-width: 600px){
-    header {
-        height: 100vh;
-    }
-    .me img{
-    
-        background-color: black;
-        width: 15rem;
-        height: auto;
-        position:absolute;
-        left: cal(150% - 11rem);
-        margin-top: 2rem;
-        border-radius: 6rem  0.5rem 6rem 0.5rem ;
-        border: 1px solid rgba(235, 235, 235, 0.36);
-        left: calc(65% - 11rem);
-        box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 10px, rgba(0, 0, 0, 0.15) 0px 15px 12px;
-    }
-
-    .header__socials,
-    .scroll__down{ display: none;
-
-    }
-} */
-
+.nameDeco {
+    color: white;
+	font-size: 40px;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
 
 
 /* ====== MEDIA QUERIES ==== */
 
 /* LARGER DESKTOPS AND MONITORS */
-@media all and (min-width:1279px) and (max-width:1880px) {
-    .me img{
-        width: 50rem;
-        height: 28rem;
-        left: calc(21%);
-        object-fit:fill;
-        margin-top: 1rem;
-    }
-    .header__container{
-        height: 90vh;
-    }
+@media all and (min-width:1201px)  and (max-width:1880px) {
+    
 }
 
 
 /* LAPTOPS, LARGER TABLETS IN LANDSCAPE, AND SMALL DESKTOPS */
-@media all and (min-width:769px) and (max-width:1279px) {
-    .me img{
-        width: 39rem;
-        left: calc(10%);
-        object-fit:fill;
-    }
-    .header__container{
-        height: 40vh;
-    }
+@media all and (min-width:769px) and (max-width:1024px) {
+    
 }
 
 /* TABLETS & LARGER SMARTPHONES */
 @media all and (min-width:481px) and (max-width:768px) {
+    .introductionBanner{
+        margin-top: 20px;
+        border-radius: 2rem;
+    }
     .me img{
-        display: none;
+        background-color: black;
+        width: 40%;
+        height: 40%;
+        margin-top: 2rem;
+        border-radius: 1rem  ;
+        border: 1px solid rgba(235, 235, 235, 0.36);
+        box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 10px, rgba(0, 0, 0, 0.15) 0px 15px 12px;
     }
 }
 
 /* SMALLER SMARTPHONES */
-@media all and (min-width:0px) and (max-width:480px) {
+@media all and (min-width:320px) and (max-width:480px) {
+    .introductionBanner{
+        margin-top: 20px;
+        border-radius: 2rem;
+    }
     .me img{
-        height: 15rem;
-        width: 19rem;
-        left: calc(1%);
-        border-radius: 1rem  0.25rem 1rem 0.25rem ;
-    }
-
-    .header__socials{
-        flex-direction: row;
-        margin-bottom: 2rem;
-        width: 7rem
-    }
-    .header__socials::after {
-        content: '';
-        width: 0px;
-        height: 0rem;
-        background: var(--color-primary);
-    }
-
-    .scroll__down{
-        transform: rotate(360deg);
-        margin-right: 2rem;
+        background-color: black;
+        width: 40%;
+        height: 40%;
+        margin-top: 2rem;
+        border-radius: 1rem  ;
+        border: 1px solid rgba(235, 235, 235, 0.36);
+        box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 10px, rgba(0, 0, 0, 0.15) 0px 15px 12px;
     }
 } 

@@ -8,7 +8,7 @@ import { AiOutlineFolder } from "react-icons/ai";
 const About = () => {
     return (
         <section id="about">
-            <h5>Get To Know</h5>
+            <h3>Get To Know</h3>
             <h2>About Me</h2>
 
             <div className="container about__container">
@@ -37,21 +37,19 @@ const About = () => {
                     </div>
 
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Quo ex odit veritatis. Eveniet blanditiis tempora
-                        similique, culpa ipsam officiis nam iure labore
-                        molestias praesentium incidunt cupiditate eaque
-                        dignissimos deserunt beatae. Suscipit minima ! Lorem,
-                        ipsum dolor sit amet consectetur adipisicing elit. Quo
-                        ex odit veritatis. Eveniet blanditiis tempora similique,
-                        culpa ipsam officiis nam iure labore molestias
-                        praesentium incidunt cupiditate eaque dignissimos
-                        deserunt beatae. Suscipit minima ! Lorem, ipsum dolor
-                        sit amet consectetur adipisicing elit. Quo ex odit
-                        veritatis. Eveniet blanditiis tempora similique, culpa
-                        ipsam officiis nam iure labore molestias praesentium
-                        incidunt cupiditate eaque dignissimos deserunt beatae.
-                        Suscipit minima !
+                        Full Stack Developer / Software Developer / IT Analyst
+                        with 10 + years of hands-on experience in designing,
+                        developing, and implementing applications and solutions
+                        using a range of technologies and programming languages.
+                        Seeking to leverage development experience and hands-on
+                        IT expertise in a challenging role as a Full-stack
+                        Developer. Current career responsibilities include, but
+                        not limited to, rebuilding and maintaining entire
+                        front-end experience with a mobile-first responsive
+                        design including back-end development for communication
+                        and functionality. Expanding sales opportunities by
+                        building custom platforms and management of version
+                        control operations via GIT.
                     </p>
                     <a href="#contact" className="btn btn-primary">
                         Let's Talk

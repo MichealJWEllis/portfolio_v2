@@ -10,22 +10,18 @@ const HeaderSocials = () => {
             <a
                 href="https://www.linkedin.com/in/michealjwellissr/"
                 target="_blank"
-                rel="noreferrer"
+                rel="linkedin"
             >
                 <BsLinkedin />
             </a>
             <a
                 href="https://github.com/MichealJWEllis"
                 target="_blank"
-                rel="noreferrer"
+                rel="github"
             >
                 <FaGithub />
             </a>
-            <a
-                href="mailto:mike.ellis88@gmail.com ? {subject} = {subject}"
-                target="_blank"
-                rel="noreferrer"
-            >
+            <a href="#contact">
                 <HiMail />
             </a>
         </div>
