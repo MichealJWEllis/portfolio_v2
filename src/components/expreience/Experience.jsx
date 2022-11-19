@@ -44,7 +44,7 @@ const Experience = () => {
                     <div className="boxContainer">
                         <ul>
                             <li>
-                                <div className="info">
+                                <div className="infoBox">
                                     {kwest.split("\n\n").map((paragraph) => (
                                         <p>
                                             {paragraph
@@ -59,7 +59,7 @@ const Experience = () => {
                                 </div>
                             </li>
                             <li>
-                                <div className="info">
+                                <div className="infoBox">
                                     {erie.split("\n\n").map((paragraph) => (
                                         <p>
                                             {paragraph
@@ -74,7 +74,7 @@ const Experience = () => {
                                 </div>
                             </li>
                             <li>
-                                <div className="info">
+                                <div className="infoBox">
                                     {alro.split("\n\n").map((paragraph) => (
                                         <p>
                                             {paragraph
@@ -89,7 +89,7 @@ const Experience = () => {
                                 </div>
                             </li>
                             <li>
-                                <div className="info">
+                                <div className="infoBox">
                                     {alro2.split("\n\n").map((paragraph) => (
                                         <p>
                                             {paragraph
