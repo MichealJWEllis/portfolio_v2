@@ -2,6 +2,8 @@ import React from "react";
 import "./experience.css";
 import { Box } from "@mui/material";
 
+const { v4: uuidv4 } = require("uuid");
+
 const Experience = () => {
     const kwest = `Kwest Group ___ May 22, 2022 - Present
     (Web Developer / Full Stack Developer)
@@ -46,12 +48,12 @@ const Experience = () => {
                             <li>
                                 <div className="infoBox">
                                     {kwest.split("\n\n").map((paragraph) => (
-                                        <p>
+                                        <p key={uuidv4()}>
                                             {paragraph
                                                 .split("\n")
                                                 .reduce((total, line) => [
                                                     total,
-                                                    <br />,
+                                                    <br key={uuidv4()} />,
                                                     line,
                                                 ])}
                                         </p>
@@ -61,12 +63,12 @@ const Experience = () => {
                             <li>
                                 <div className="infoBox">
                                     {erie.split("\n\n").map((paragraph) => (
-                                        <p>
+                                        <p key={uuidv4()}>
                                             {paragraph
                                                 .split("\n")
                                                 .reduce((total, line) => [
                                                     total,
-                                                    <br />,
+                                                    <br key={uuidv4()} />,
                                                     line,
                                                 ])}
                                         </p>
@@ -76,12 +78,12 @@ const Experience = () => {
                             <li>
                                 <div className="infoBox">
                                     {alro.split("\n\n").map((paragraph) => (
-                                        <p>
+                                        <p key={uuidv4()}>
                                             {paragraph
                                                 .split("\n")
                                                 .reduce((total, line) => [
                                                     total,
-                                                    <br />,
+                                                    <br key={uuidv4()} />,
                                                     line,
                                                 ])}
                                         </p>
@@ -91,12 +93,12 @@ const Experience = () => {
                             <li>
                                 <div className="infoBox">
                                     {alro2.split("\n\n").map((paragraph) => (
-                                        <p>
+                                        <p key={uuidv4()}>
                                             {paragraph
                                                 .split("\n")
                                                 .reduce((total, line) => [
                                                     total,
-                                                    <br />,
+                                                    <br key={uuidv4()} />,
                                                     line,
                                                 ])}
                                         </p>

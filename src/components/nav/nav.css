@@ -10,6 +10,7 @@ nav {
     backdrop-filter: blur(15px);
     margin: 2rem;
     align-items: center;
+    position: -webkit-sticky;
 }
 
 nav a{

@@ -17,9 +17,9 @@ body {
 
 #root, html{
     height: 100vh;
-    /* width: 100vw; */
-    /* position: relative;
-    object-fit: cover; */
+    width: 100vw;
+    position: relative;
+    object-fit: cover;
     scroll-behavior: smooth;
 }
 
@@ -41,9 +41,9 @@ body {
 
 
 
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
     display: none;
-} */
+}
 
 body{
     
