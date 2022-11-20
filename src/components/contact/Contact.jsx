@@ -32,6 +32,7 @@ const Contact = () => {
     };
     return (
         <section id="contact">
+            <h2 style={{ color: "white" }}>Contact</h2>
             <div className="emailForm">
                 <Form onSubmit={handleOnSubmit}>
                     <Form.Field

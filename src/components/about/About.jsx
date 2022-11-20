@@ -8,8 +8,7 @@ import { AiOutlineFolder } from "react-icons/ai";
 const About = () => {
     return (
         <section id="about">
-            <h3>Get To Know</h3>
-            <h2>About Me</h2>
+            <h2 style={{ color: "white" }}>About Me</h2>
 
             <div className="container about__container">
                 <div className="about__me">

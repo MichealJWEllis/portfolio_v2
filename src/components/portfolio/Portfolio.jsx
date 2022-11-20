@@ -76,7 +76,8 @@ const Portfolio = () => {
         },
         {
             title: "Rock Paper Scissors GAme",
-            description: "Classic game of rock, paper, scissors.  Code Used: HTML,CSS, JS",
+            description:
+                "Classic game of rock, paper, scissors.  Code Used: HTML,CSS, JS",
             button: "Visit Site",
             image: `${RPS}`,
             user: "Micheal Jw Ellis Sr",
@@ -87,6 +88,7 @@ const Portfolio = () => {
 
     return (
         <section id="portfolio" style={{ padding: "20px" }}>
+            <h2 style={{ color: "white" }}>Portfolio</h2>
             <Slider className="slider-wrapper" autoplay="3000">
                 {content.map((item, index) => (
                     <div

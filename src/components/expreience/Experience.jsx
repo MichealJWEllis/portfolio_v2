@@ -40,7 +40,7 @@ const Experience = () => {
     return (
         <section id="experience">
             <Box>
-                <h3 style={{ textAlign: "center" }}>Work Experience</h3>
+                <h2 style={{ textAlign: "center" }}>Work Experience</h2>
 
                 <Box>
                     <div className="boxContainer">
