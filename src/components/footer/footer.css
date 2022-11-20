@@ -1,3 +1,19 @@
+footer {
+    
+    padding: 5px 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.homeBtn{
+    color: white;
+}
+  
+  
+  
+  
+
 /* ====== MEDIA QUERIES ==== */
 
 /* LARGER DESKTOPS AND MONITORS */
