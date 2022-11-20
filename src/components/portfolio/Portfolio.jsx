@@ -4,11 +4,13 @@ import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import ME from "../../assets/myImages/ME.jpg";
 import BudgetSite from "../../assets/projectsImages/budget.png";
-import TaskSite from "../../assets/projectsImages/task.png";
+//import TaskSite from "../../assets/projectsImages/task.png";
 import TodoSite from "../../assets/projectsImages/todo1.png";
 import QuizSite from "../../assets/projectsImages/quiz.png";
 import WorkDaySite from "../../assets/projectsImages/workday.png";
 import WeatherSite from "../../assets/projectsImages/WeatherDash1.png";
+import FoodFestival from "../../assets/projectsImages/foodfestival.png";
+import RPS from "../../assets/projectsImages/rpsGame.png";
 
 const Portfolio = () => {
     const content = [
@@ -21,16 +23,6 @@ const Portfolio = () => {
             user: "Micheal Jw Ellis Sr",
             userProfile: `${ME}`,
             link: "https://michealjwellis.github.io/mod6_redo/",
-        },
-        {
-            title: "Tortor Dapibus Commodo Aenean Quam",
-            description:
-                "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.",
-            button: "Visit Site",
-            image: `${TaskSite}`,
-            user: "Micheal Jw Ellis Sr",
-            userProfile: `${ME}`,
-            link: "https://www.google.com",
         },
         {
             title: "ToDo App",
@@ -72,6 +64,25 @@ const Portfolio = () => {
             userProfile: `${ME}`,
             link: "https://michealjwellis.github.io/mod6prodRedo/",
         },
+        {
+            title: "Food Festival Landing Page",
+            description:
+                "Landing page for food festival to display ticket prices and book tickets for the event.  Code Used: HTML,CSS",
+            button: "Visit Site",
+            image: `${FoodFestival}`,
+            user: "Micheal Jw Ellis Sr",
+            userProfile: `${ME}`,
+            link: "https://michealjwellis.github.io/food-festival/",
+        },
+        {
+            title: "Rock Paper Scissors GAme",
+            description: "Classic game of rock, paper, scissors.  Code Used: HTML,CSS, JS",
+            button: "Visit Site",
+            image: `${RPS}`,
+            user: "Micheal Jw Ellis Sr",
+            userProfile: `${ME}`,
+            link: "https://michealjwellis.github.io/rockpapersissors/",
+        },
     ];
 
     return (
@@ -80,7 +91,6 @@ const Portfolio = () => {
                 {content.map((item, index) => (
                     <div
                         key={index}
-                        
                         className="slider-content"
                         style={{
                             background: `url('${item.image}') no-repeat center center`,
