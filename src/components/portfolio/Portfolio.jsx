@@ -11,6 +11,8 @@ import WorkDaySite from "../../assets/projectsImages/workday.png";
 import WeatherSite from "../../assets/projectsImages/WeatherDash1.png";
 import FoodFestival from "../../assets/projectsImages/foodfestival.png";
 import RPS from "../../assets/projectsImages/rpsGame.png";
+import Blue from "../../assets/projectsImages/Screenshot 2022-12-07 120420.png";
+import MyPortfolio from "../../assets/projectsImages/Screenshot 2022-12-07 120516.png";
 
 const Portfolio = () => {
     const content = [
@@ -75,7 +77,7 @@ const Portfolio = () => {
             link: "https://michealjwellis.github.io/food-festival/",
         },
         {
-            title: "Rock Paper Scissors GAme",
+            title: "Rock Paper Scissors Game",
             description:
                 "Classic game of rock, paper, scissors.  Code Used: HTML,CSS, JS",
             button: "Visit Site",
@@ -83,6 +85,26 @@ const Portfolio = () => {
             user: "Micheal Jw Ellis Sr",
             userProfile: `${ME}`,
             link: "https://michealjwellis.github.io/rockpapersissors/",
+        },
+        {
+            title: "Blue Topaz",
+            description:
+                "Ecommerce site to cell handmade craft items.  Code Used: HTML,CSS, NextJS, JavaScript",
+            button: "Visit Site",
+            image: `${Blue}`,
+            user: "Micheal Jw Ellis Sr",
+            userProfile: `${ME}`,
+            link: "",
+        },
+        {
+            title: "My Portfolio",
+            description:
+                "Portfolio to describe my skill set for potential employers.  Code Used: HTML,CSS,React,JavaScript",
+            button: "Visit Site",
+            image: `${MyPortfolio}`,
+            user: "Micheal Jw Ellis Sr",
+            userProfile: `${ME}`,
+            link: "https://michealjwellis.github.io/portfolio_v2/",
         },
     ];
 
