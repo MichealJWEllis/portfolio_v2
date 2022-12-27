@@ -43,14 +43,14 @@ const Nav = () => {
                 >
                     <MdDeveloperMode />
                 </a>
-                <a
+                {/* <a
                     title="Services"
                     href="#services"
                     onClick={() => setActiveNav("#services")}
                     className={activeNav === "#services" ? "active" : ""}
                 >
                     <RiServiceLine />
-                </a>
+                </a> */}
                 <a
                     title="Portfolio"
                     href="#portfolio"
